@@ -46,6 +46,8 @@ The work will be executed in phased increments and validated progressively.
 - Week 5–6: Translation optimization and cleanup
 - Final Weeks: Validation, benchmarking, regression testing, documentation, and refinements
 
+The timeline may be refined based on review feedback and measured performance impact, with final completion targeted before May 1, 2026.
+
 # Expected Impact
 - Reduced initial JavaScript payload on login routes
 - Lower network request volume before authentication
