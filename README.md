@@ -20,6 +20,26 @@ This suggests insufficient isolation between public and authenticated applicatio
 - MUI barrel imports increase bundle size.
 - Large translation files are loaded eagerly.
 - Redundant ```useEffect``` patterns may trigger unnecessary re-renders.
+## Execution Aligned with Login Performance Program Issues
+
+- **Phase 1:**  
+  - [#5919](https://github.com/PalisadoesFoundation/talawa-admin/issues/5919)  
+  - [#5920](https://github.com/PalisadoesFoundation/talawa-admin/issues/5920)
+
+- **Phase 2:**  
+  - [#5921](https://github.com/PalisadoesFoundation/talawa-admin/issues/5921)  
+  - [#5922](https://github.com/PalisadoesFoundation/talawa-admin/issues/5922)  
+  - [#5923](https://github.com/PalisadoesFoundation/talawa-admin/issues/5923)  
+  - [#5926](https://github.com/PalisadoesFoundation/talawa-admin/issues/5926)
+
+- **Phase 3:**  
+  - [#5924](https://github.com/PalisadoesFoundation/talawa-admin/issues/5924)  
+  - [#5925](https://github.com/PalisadoesFoundation/talawa-admin/issues/5925)
+
+- **Phase 4:**  
+  - [#5927](https://github.com/PalisadoesFoundation/talawa-admin/issues/5927)  
+  - [#5928](https://github.com/PalisadoesFoundation/talawa-admin/issues/5928)
+ 
 ## Optimization Strategy (Phased)
 ### 1. Bundle Hygiene
 - Standardize debounce imports using ```lodash-es```.
@@ -40,13 +60,9 @@ This suggests insufficient isolation between public and authenticated applicatio
 - Split and clean large translation files; remove unused keys.
   
 # Proposed Timeline
-The work will be executed in phased increments and validated progressively.
-- Week 1–2: Bundle hygiene and public route isolation
-- Week 3–4: Apollo, query, and runtime optimizations
-- Week 5–6: Translation optimization and cleanup
-- Final Weeks: Validation, benchmarking, regression testing, documentation, and refinements
-
-The timeline may be refined based on review feedback and measured performance impact, with final completion targeted before May 1, 2026.
+- Issues will be executed sequentially based on dependency order.
+- Estimated effort aligns with per-issue estimates (1–5 hours development + testing).
+- Target completion: before May 1, 2026.
 
 # Expected Impact
 - Reduced initial JavaScript payload on login routes
